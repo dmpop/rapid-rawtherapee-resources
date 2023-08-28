@@ -3,7 +3,7 @@ AppVersion=5.9
 Version=349
 
 [General]
-Rank=-1
+Rank=0
 ColorLabel=0
 InTrash=false
 
@@ -18,12 +18,12 @@ Black=0
 HighlightCompr=0
 HighlightComprThreshold=0
 ShadowCompr=50
-HistogramMatching=false
+HistogramMatching=true
 CurveFromHistogramMatching=false
 ClampOOG=false
-CurveMode=Standard
+CurveMode=FilmLike
 CurveMode2=Standard
-Curve=0;
+Curve=4;0;0;0.050000000000000003;0.092930347696523932;0.12;0.2148843528304443;0.21799999999999997;0.37258352624489527;0.35519999999999996;0.57822173316151804;0.54727999999999999;0.82794886435254245;0.81619199999999992;1;1;1;
 Curve2=0;
 
 [HLRecovery]
@@ -122,7 +122,7 @@ LcCurve=0;
 ClCurve=0;
 
 [Sharpening]
-Enabled=true
+Enabled=false
 Contrast=20
 Method=usm
 Radius=0.5
@@ -164,9 +164,9 @@ Uniformity=5
 
 [White Balance]
 Enabled=true
-Setting=Camera
-Temperature=5759
-Green=0.90400000000000003
+Setting=Custom
+Temperature=5454
+Green=0.90600000000000003
 Equal=1
 TemperatureBias=0
 
@@ -377,10 +377,10 @@ AllowUpscaling=false
 
 [PostDemosaicSharpening]
 Enabled=true
-Contrast=21
+Contrast=12
 AutoContrast=true
 AutoRadius=true
-DeconvRadius=0.82999999999999996
+DeconvRadius=0.73999999999999999
 DeconvRadiusOffset=0
 DeconvIterCheck=true
 DeconvIterations=20
@@ -613,7 +613,7 @@ SCurve=0;
 VCurve=0;
 
 [SoftLight]
-Enabled=false
+Enabled=true
 Strength=30
 
 [Film Simulation]
@@ -629,7 +629,7 @@ gCurve=0;
 bCurve=0;
 
 [ColorToning]
-Enabled=false
+Enabled=true
 Method=LabRegions
 Lumamode=true
 Twocolor=Std
@@ -648,8 +648,8 @@ Bluehigh=0
 Autosat=true
 OpacityCurve=1;0;0.29999999999999999;0.34999999999999998;0;0.25;0.80000000000000004;0.34999999999999998;0.34999999999999998;0.69999999999999996;0.80000000000000004;0.34999999999999998;0.34999999999999998;1;0.29999999999999999;0;0;
 ColorCurve=1;0.050000000000000003;0.62;0.25;0.25;0.58499999999999996;0.11;0.25;0.25;
-SatProtectionThreshold=30
-SaturatedOpacity=80
+SatProtectionThreshold=15
+SaturatedOpacity=12
 Strength=50
 HighlightsColorSaturation=60;80;
 ShadowsColorSaturation=80;208;
@@ -708,7 +708,7 @@ DCBIterations=2
 DCBEnhance=true
 LMMSEIterations=2
 DualDemosaicAutoContrast=true
-DualDemosaicContrast=21
+DualDemosaicContrast=12
 PixelShiftMotionCorrectionMethod=1
 PixelShiftEperIso=0
 PixelShiftSigma=1
